@@ -10,4 +10,14 @@ jQuery(function($) {
       $('#input-email label').removeClass('active');
     }
   });
+  $("#alt-box").on("click", function () {
+    if (!$("#age-verification").attr("checked")) {
+      $("#age-verification").prop("checked", true);
+      $("#alt-box").html("<p>&#10004;</p>");
+    }
+    if ($("#age-verification").attr("checked")) {
+      $("#age-verification").prop("checked", false);
+      $("#alt-box").html("<p>&#10004;</p>");
+    }
+  });
 });

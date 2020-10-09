@@ -219,7 +219,7 @@ label {
   margin: 0 auto;
   padding: 2.364em; /* 52px / ~ 240% */
   text-align: left;
-  width: 25%;
+  width: 26%;
   text-align: left;
 }
 
@@ -234,6 +234,9 @@ label {
 
 input[type="email"] {
   /*padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
+
+#center {
 }
 
 input[type="checkbox"] {
@@ -263,6 +266,16 @@ form li {
   padding-bottom: 1.182em; /* 26px / ~ 120% */
 }
 
+#alt-box {
+  margin-right: .34375em;
+  float: left;
+  height: 1em;
+  width: 1em;
+  background-color: #DDD;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+}
+
 #age-verification + label {
   display: block;
   padding-left: 20px;
@@ -286,6 +299,11 @@ form li {
 
 .hasjs #input-email label.active {
   top: -25px;
+}
+
+.hasjs #age-verification {
+  position: absolute; 
+  right: 6000px;
 }
 
 /* ===== STATE STYLES ======= */
