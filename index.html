@@ -12,15 +12,17 @@
 <body>
 <main id="content">
   <form method="get" action="#null">
-    <h1>Secret Diabetes Newsletter</h1>
-    <p>
+    <div id="head">
+      <h1>Secret Diabetes Newsletter</h1>
+    </div>
+    <h2>
       Sign up and learn 5 secrets to fight Diabetes!
-    </p>
+    </h2>
     <div id="list">
       <ol>
         <li id="input-email">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" pattern="^.+@.+$" />
+          <input type="email" name="email" id="email" pattern="^.+@.+$" required />
         </li>
         <li id="input-age-verification">
           <div id="center">
