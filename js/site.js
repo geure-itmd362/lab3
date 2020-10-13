@@ -29,7 +29,8 @@ $(document).ready(function () {
           $('#age-verification').prop('checked', true); //check 
           $("#alt-box").html("<p>&#10004;</p>");
         } else {
-          $('#age-verification').prop('checked', false); //uncheck              
+          $('#age-verification').prop('checked', false); //uncheck      
+          $("#alt-box").html("<p>&#32;</p>");        
         }
     });
 
