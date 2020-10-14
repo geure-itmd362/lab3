@@ -246,30 +246,13 @@ label {
   outline: none;
 }
 
+#email:hover {
+  background-color: #a7a7a7;
+}
+
 #input-email {
   text-align: left;
   width: 100%;
-}
-
-input[type="email"] {
-  /*padding-bottom: 1.182em; /* 26px / ~ 120% */
-}
-
-#center {
-}
-
-input[type="checkbox"] {
-  width: auto;
-  height: auto;
-  float: left;
-  -ms-transform: scale(1.2); /* IE */
-  -moz-transform: scale(1.2); /* FF */
-  -webkit-transform: scale(1.2); /* Safari and Chrome */
-  -o-transform: scale(1.2); /* Opera */
-}
-
-input[type="checkbox"] + label {
-  display: inline;
 }
 
 #input-submit {
@@ -311,29 +294,11 @@ form li {
   padding-bottom: 1.182em; /* 26px / ~ 120% */
 }
 
-#alt-box {
-  margin-right: .34375em;
-  float: left;
-  height: 1em;
-  width: 1em;
-  background-color: #d2d2d2;
-  border: none;
-  border-radius: .18181818em;
-}
-
-#age-verification + label {
-  display: block;
-  padding-left: .91em;
-}
-
 /*.hasjs class will only exist if js runs*/
 .hasjs #input-email {
   position: relative;
 }
 
-.hasjs ::placeholder {
-  color: #DDD;
-}
 .hasjs #input-email label {
   color: black;
   transition: top 1s;
@@ -346,9 +311,65 @@ form li {
   top: -25px;
 }
 
-.hasjs #age-verification {
-  position: absolute; 
-  right: 6000px;
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 1.5909090909090908em;
 }
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #d2d2d2;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #a7a7a7;
+}
+
+/* When the checkbox is checked, add a dark gray background */
+.container input:checked ~ .checkmark {
+  background-color: #7a7a79;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: .32em;
+  top: .05em;
+  width: .2em;
+  height: .5em;
+  border: solid white;
+  border-width: 0 .1875em .1875em 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
 
 /* ===== STATE STYLES ======= */

@@ -12,27 +12,5 @@ $(document).ready(function () {
         $('#input-email label').removeClass('active');
       }
     });
-
-      //$("#alt-box").on("click", function () {
-      //  if ($("#age-verification").prop("checked", true)) {
-      //    $("#age-verification").prop("checked", false);
-       //   $("#alt-box").html("<p>&#10004;</p>");
-      //  } else {
-      //    $("#age-verification").prop("checked", true);
-       //   $("#alt-box").html("<p>&#32;</p>");
-       // }
-      //});
-
-
-        $('#alt-box').click(function (event) {
-        if (!(this.checked)) {
-          $('#age-verification').prop('checked', true); //check 
-          $("#alt-box").html("<p>&#10004;</p>");
-        } else {
-          $('#age-verification').prop('checked', false); //uncheck      
-          $("#alt-box").html("<p>&#32;</p>");        
-        }
-    });
-
   });
 });
