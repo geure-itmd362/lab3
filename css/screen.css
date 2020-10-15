@@ -197,7 +197,6 @@ input:-webkit-autofill   {
   -webkit-box-shadow: 0 0 0 1 !important;
   background-clip: content-box !important;
   transition: background-color 1s 5000s;
-  padding-left: .34375em;
 }
 
 html {
